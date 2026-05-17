@@ -117,7 +117,7 @@ const HomeReadyLanding = () => {
           <motion.div initial="hidden" animate="visible" variants={stagger}>
             <motion.div
               variants={fadeInUp}
-              className="inline-block bg-bred/20 text-bred text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded mb-5"
+              className="inline-block bg-white/10 text-white text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded mb-5"
             >
               Credit Preparation · Bond Readiness
             </motion.div>
