@@ -56,16 +56,11 @@ const HomeReadyLanding = () => {
       </motion.a>
 
       {/* ── 01 NAVIGATION ── */}
-      <nav className="bg-brand-charcoal sticky top-0 z-40">
+      <nav className="bg-charcoal sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-5 py-3 flex items-center">
-          <div className="flex items-center gap-2 mr-auto">
-            <div className="bg-white/15 rounded px-3 py-1.5">
-              <span className="text-sm font-semibold">
-                <span className="text-brand-red">Home</span>
-                <span className="text-white/80">Ready</span>
-              </span>
-            </div>
-          </div>
+          <a href="#" className="mr-auto">
+            <img src="/logo.png" alt="HomeReady Finance Solutions" className="h-10" />
+          </a>
 
           <div className="hidden md:flex items-center gap-6">
             {navLinks.map((l) => (
@@ -79,7 +74,7 @@ const HomeReadyLanding = () => {
             ))}
             <a
               href="#contact"
-              className="bg-brand-red text-white text-sm font-medium px-4 py-2 rounded hover:bg-brand-red-dark transition-colors"
+              className="bg-bred text-white text-sm font-medium px-4 py-2 rounded hover:bg-bred-dark transition-colors"
             >
               Get started
             </a>
@@ -94,7 +89,7 @@ const HomeReadyLanding = () => {
         </div>
 
         {mobileNav && (
-          <div className="md:hidden bg-brand-charcoal-dark px-5 pb-4 space-y-3">
+          <div className="md:hidden bg-charcoal-dark px-5 pb-4 space-y-3">
             {navLinks.map((l) => (
               <a
                 key={l.label}
@@ -107,7 +102,7 @@ const HomeReadyLanding = () => {
             ))}
             <a
               href="#contact"
-              className="block bg-brand-red text-white text-sm font-medium px-4 py-2 rounded text-center"
+              className="block bg-bred text-white text-sm font-medium px-4 py-2 rounded text-center"
               onClick={() => setMobileNav(false)}
             >
               Get started
@@ -117,12 +112,12 @@ const HomeReadyLanding = () => {
       </nav>
 
       {/* ── 02 HERO ── */}
-      <section className="bg-brand-charcoal">
+      <section className="bg-charcoal">
         <div className="max-w-7xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
           <motion.div initial="hidden" animate="visible" variants={stagger}>
             <motion.div
               variants={fadeInUp}
-              className="inline-block bg-brand-red/20 text-brand-red text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded mb-5"
+              className="inline-block bg-bred/20 text-bred text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded mb-5"
             >
               Credit Preparation · Bond Readiness
             </motion.div>
@@ -132,7 +127,7 @@ const HomeReadyLanding = () => {
               className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-5"
             >
               We prepare you to{' '}
-              <span className="text-brand-red">qualify for credit</span> —
+              <span className="text-bred">qualify for credit</span> —
               properly and strategically.
             </motion.h1>
 
@@ -148,7 +143,7 @@ const HomeReadyLanding = () => {
             <motion.div variants={fadeInUp} className="flex flex-wrap gap-3">
               <a
                 href="#contact"
-                className="bg-brand-red hover:bg-brand-red-dark text-white font-medium px-6 py-3 rounded transition-colors"
+                className="bg-bred hover:bg-bred-dark text-white font-medium px-6 py-3 rounded transition-colors"
               >
                 Get started
               </a>
@@ -167,18 +162,13 @@ const HomeReadyLanding = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="hidden md:flex items-center justify-center"
           >
-            <div className="w-full max-w-md aspect-[4/3] bg-white/5 border border-white/10 rounded-xl flex flex-col items-center justify-center gap-3">
-              <FaHome className="text-5xl text-white/15" />
-              <span className="text-xs text-white/25 uppercase tracking-wider">
-                Logo / Hero image
-              </span>
-            </div>
+            <img src="/logo.png" alt="HomeReady Finance Solutions" className="w-full max-w-sm mx-auto drop-shadow-2xl" />
           </motion.div>
         </div>
       </section>
 
       {/* ── 03 TRUST BAR ── */}
-      <section className="bg-gray-50 border-t-[3px] border-brand-red">
+      <section className="bg-gray-50 border-t-[3px] border-bred">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex flex-wrap items-center justify-around gap-4">
             {[
@@ -188,7 +178,7 @@ const HomeReadyLanding = () => {
               'Reg No: 2015/248399/07',
             ].map((text) => (
               <div key={text} className="flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-brand-red flex-shrink-0" />
+                <span className="w-2 h-2 rounded-full bg-bred flex-shrink-0" />
                 <span className="text-sm text-gray-600 font-medium">{text}</span>
               </div>
             ))}
@@ -207,9 +197,9 @@ const HomeReadyLanding = () => {
           >
             <motion.h2
               variants={fadeInUp}
-              className="text-2xl md:text-3xl font-semibold text-brand-charcoal mb-1"
+              className="text-2xl md:text-3xl font-semibold text-charcoal mb-1"
             >
-              What we <span className="text-brand-red">do</span>
+              What we <span className="text-bred">do</span>
             </motion.h2>
             <motion.p
               variants={fadeInUp}
@@ -247,12 +237,12 @@ const HomeReadyLanding = () => {
                 <motion.div
                   key={i}
                   variants={fadeInUp}
-                  className="border border-gray-200 rounded-lg p-5 border-t-[3px] border-t-brand-red hover:shadow-lg transition-shadow"
+                  className="border border-gray-200 rounded-lg p-5 border-t-[3px] border-t-bred hover:shadow-lg transition-shadow"
                 >
-                  <div className="w-10 h-10 bg-brand-red-light rounded-lg flex items-center justify-center text-brand-red text-lg mb-3">
+                  <div className="w-10 h-10 bg-bred-light rounded-lg flex items-center justify-center text-bred text-lg mb-3">
                     {card.icon}
                   </div>
-                  <h3 className="font-semibold text-brand-charcoal mb-2">
+                  <h3 className="font-semibold text-charcoal mb-2">
                     {card.title}
                   </h3>
                   <p className="text-sm text-gray-400 leading-relaxed">
@@ -276,9 +266,9 @@ const HomeReadyLanding = () => {
           >
             <motion.h2
               variants={fadeInUp}
-              className="text-2xl md:text-3xl font-semibold text-brand-charcoal mb-1"
+              className="text-2xl md:text-3xl font-semibold text-charcoal mb-1"
             >
-              Our <span className="text-brand-red">services</span>
+              Our <span className="text-bred">services</span>
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-gray-400 mb-10">
               Three focused services to get you bond-ready.
@@ -327,7 +317,7 @@ const HomeReadyLanding = () => {
                   variants={fadeInUp}
                   className="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
                 >
-                  <div className="bg-brand-charcoal px-5 py-4">
+                  <div className="bg-charcoal px-5 py-4">
                     <p className="text-xs text-white/40 mb-0.5">
                       Service {svc.num}
                     </p>
@@ -339,7 +329,7 @@ const HomeReadyLanding = () => {
                         key={i}
                         className="flex items-start gap-2 text-sm text-gray-400 border-b border-gray-100 pb-2 last:border-0"
                       >
-                        <span className="text-brand-red flex-shrink-0">—</span>
+                        <span className="text-bred flex-shrink-0">—</span>
                         {item}
                       </li>
                     ))}
@@ -362,10 +352,10 @@ const HomeReadyLanding = () => {
           >
             <motion.h2
               variants={fadeInUp}
-              className="text-2xl md:text-3xl font-semibold text-brand-charcoal mb-1"
+              className="text-2xl md:text-3xl font-semibold text-charcoal mb-1"
             >
               This service is ideal{' '}
-              <span className="text-brand-red">for you</span> if…
+              <span className="text-bred">for you</span> if…
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-gray-400 mb-10">
               HomeReady works with a wide range of clients.
@@ -384,12 +374,12 @@ const HomeReadyLanding = () => {
                 <motion.div
                   key={i}
                   variants={fadeInUp}
-                  className="border border-gray-200 rounded-lg py-8 px-4 text-center hover:shadow-lg hover:border-brand-red/30 transition-all"
+                  className="border border-gray-200 rounded-lg py-8 px-4 text-center hover:shadow-lg hover:border-bred/30 transition-all"
                 >
-                  <div className="text-3xl text-brand-red mb-3 flex justify-center">
+                  <div className="text-3xl text-bred mb-3 flex justify-center">
                     {aud.icon}
                   </div>
-                  <p className="font-medium text-sm text-brand-charcoal">
+                  <p className="font-medium text-sm text-charcoal">
                     {aud.label}
                   </p>
                 </motion.div>
@@ -400,7 +390,7 @@ const HomeReadyLanding = () => {
       </section>
 
       {/* ── 07 CTA ── */}
-      <section className="bg-brand-red py-14 md:py-20">
+      <section className="bg-bred py-14 md:py-20">
         <div className="max-w-xl mx-auto px-6 text-center">
           <motion.div
             initial="hidden"
@@ -434,7 +424,7 @@ const HomeReadyLanding = () => {
                 href="https://wa.me/27722048877"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-brand-charcoal hover:bg-brand-charcoal-dark text-white font-medium px-5 py-3 rounded whitespace-nowrap transition-colors flex items-center gap-2"
+                className="bg-charcoal hover:bg-charcoal-dark text-white font-medium px-5 py-3 rounded whitespace-nowrap transition-colors flex items-center gap-2"
               >
                 <FaWhatsapp />
                 WhatsApp us
@@ -455,9 +445,9 @@ const HomeReadyLanding = () => {
           >
             <motion.h2
               variants={fadeInUp}
-              className="text-2xl md:text-3xl font-semibold text-brand-charcoal mb-1"
+              className="text-2xl md:text-3xl font-semibold text-charcoal mb-1"
             >
-              Get in <span className="text-brand-red">touch</span>
+              Get in <span className="text-bred">touch</span>
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-gray-400 mb-8">
               We're here to help you take the first step.
@@ -487,10 +477,10 @@ const HomeReadyLanding = () => {
                   variants={fadeInUp}
                   className="flex items-center gap-3 group"
                 >
-                  <div className="w-9 h-9 bg-brand-charcoal rounded flex items-center justify-center text-white text-sm flex-shrink-0 group-hover:bg-brand-red transition-colors">
+                  <div className="w-9 h-9 bg-charcoal rounded flex items-center justify-center text-white text-sm flex-shrink-0 group-hover:bg-bred transition-colors">
                     {item.icon}
                   </div>
-                  <span className="text-sm text-gray-600 group-hover:text-brand-red transition-colors">
+                  <span className="text-sm text-gray-600 group-hover:text-bred transition-colors">
                     {item.text}
                   </span>
                 </motion.a>
@@ -508,26 +498,26 @@ const HomeReadyLanding = () => {
               <input
                 type="text"
                 placeholder="Full name…"
-                className="w-full bg-white border border-gray-200 rounded px-4 py-3 text-sm outline-none focus:border-brand-red transition-colors"
+                className="w-full bg-white border border-gray-200 rounded px-4 py-3 text-sm outline-none focus:border-bred transition-colors"
               />
               <input
                 type="email"
                 placeholder="Email address…"
-                className="w-full bg-white border border-gray-200 rounded px-4 py-3 text-sm outline-none focus:border-brand-red transition-colors"
+                className="w-full bg-white border border-gray-200 rounded px-4 py-3 text-sm outline-none focus:border-bred transition-colors"
               />
               <input
                 type="tel"
                 placeholder="Contact number…"
-                className="w-full bg-white border border-gray-200 rounded px-4 py-3 text-sm outline-none focus:border-brand-red transition-colors"
+                className="w-full bg-white border border-gray-200 rounded px-4 py-3 text-sm outline-none focus:border-bred transition-colors"
               />
               <textarea
                 rows={4}
                 placeholder="Message…"
-                className="w-full bg-white border border-gray-200 rounded px-4 py-3 text-sm outline-none focus:border-brand-red transition-colors resize-none"
+                className="w-full bg-white border border-gray-200 rounded px-4 py-3 text-sm outline-none focus:border-bred transition-colors resize-none"
               />
               <button
                 type="submit"
-                className="bg-brand-red hover:bg-brand-red-dark text-white font-medium px-6 py-3 rounded transition-colors"
+                className="bg-bred hover:bg-bred-dark text-white font-medium px-6 py-3 rounded transition-colors"
               >
                 Send message
               </button>
@@ -537,13 +527,10 @@ const HomeReadyLanding = () => {
       </section>
 
       {/* ── 09 FOOTER ── */}
-      <footer className="bg-brand-charcoal">
+      <footer className="bg-charcoal">
         <div className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-10">
           <div>
-            <h3 className="text-white font-medium text-lg mb-2">
-              <span className="text-brand-red">Home</span>Ready Finance
-              Solutions
-            </h3>
+            <img src="/logo.png" alt="HomeReady Finance Solutions" className="h-14 mb-3" />
             <p className="text-white/40 text-sm leading-relaxed">
               Credit Preparation · Financial Positioning · Bond Readiness
               <br />
@@ -595,7 +582,7 @@ const HomeReadyLanding = () => {
           </div>
         </div>
 
-        <div className="bg-brand-charcoal-dark">
+        <div className="bg-charcoal-dark">
           <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
             <span className="text-xs text-white/30">
               © 2025 HomeReady Finance Solutions. All rights reserved.
