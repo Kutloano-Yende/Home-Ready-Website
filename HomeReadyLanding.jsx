@@ -15,6 +15,8 @@ import {
   FaBriefcase,
   FaTimesCircle,
   FaCalendarAlt,
+  FaFacebookF,
+  FaInstagram,
 } from 'react-icons/fa';
 
 const fadeInUp = {
@@ -579,6 +581,32 @@ const HomeReadyLanding = () => {
                 072 204 8877 (WhatsApp)
               </a>
             </div>
+            <div className="flex gap-3 mt-4">
+              <a
+                href="https://www.facebook.com/HomeReadyFinanceSolutions"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-white/10 hover:bg-bred text-white/50 hover:text-white rounded flex items-center justify-center transition-all duration-300"
+              >
+                <FaFacebookF className="text-sm" />
+              </a>
+              <a
+                href="https://www.instagram.com/homereadyfinance?igsh=M3hlNHJnNGZzdjEz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-white/10 hover:bg-bred text-white/50 hover:text-white rounded flex items-center justify-center transition-all duration-300"
+              >
+                <FaInstagram className="text-sm" />
+              </a>
+              <a
+                href="https://wa.me/27722048877"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-white/10 hover:bg-green-500 text-white/50 hover:text-white rounded flex items-center justify-center transition-all duration-300"
+              >
+                <FaWhatsapp className="text-sm" />
+              </a>
+            </div>
           </div>
         </div>
 
@@ -589,6 +617,19 @@ const HomeReadyLanding = () => {
             </span>
             <span className="text-xs text-white/20">
               Reg No: 2015/248399/07
+            </span>
+          </div>
+          <div className="border-t border-white/5 py-3 text-center">
+            <span className="text-[11px] text-white/25 tracking-wide">
+              Designed &amp; Developed by{' '}
+              <a
+                href="https://nkanyeziyethukutloano.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/40 hover:text-bred transition-colors duration-300"
+              >
+                Nkanyezi Yethu Kutloano
+              </a>
             </span>
           </div>
         </div>
