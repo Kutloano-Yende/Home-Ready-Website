@@ -1,0 +1,21 @@
+{
+  "name": "HomeReady Finance Solutions",
+  "short_name": "HomeReady",
+  "description": "Credit Preparation, Financial Positioning & Bond Readiness in South Africa",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#C50B0C",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
