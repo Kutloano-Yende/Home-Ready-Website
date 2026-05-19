@@ -61,7 +61,7 @@ const HomeReadyLanding = () => {
       <nav className="bg-charcoal sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-5 py-3 flex items-center">
           <a href="#" className="mr-auto">
-            <img src="/logo.png" alt="HomeReady Finance Solutions" className="h-10" />
+            <img src="/logo.png" alt="HomeReady Finance Solutions - Credit Preparation and Bond Readiness" className="h-10" />
           </a>
 
           <div className="hidden md:flex items-center gap-6">
@@ -164,7 +164,7 @@ const HomeReadyLanding = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="hidden md:flex items-center justify-center"
           >
-            <img src="/logo.png" alt="HomeReady Finance Solutions" className="w-full max-w-sm mx-auto drop-shadow-2xl" />
+            <img src="/logo.png" alt="HomeReady Finance Solutions - Get Bond-Ready in 30-90 Days" className="w-full max-w-sm mx-auto drop-shadow-2xl" />
           </motion.div>
         </div>
       </section>
@@ -532,7 +532,7 @@ const HomeReadyLanding = () => {
       <footer className="bg-charcoal">
         <div className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-10">
           <div>
-            <img src="/logo.png" alt="HomeReady Finance Solutions" className="h-14 mb-3" />
+            <img src="/logo.png" alt="HomeReady Finance Solutions" loading="lazy" className="h-14 mb-3" />
             <p className="text-white/40 text-sm leading-relaxed">
               Credit Preparation · Financial Positioning · Bond Readiness
               <br />
