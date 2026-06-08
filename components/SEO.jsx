@@ -2,91 +2,24 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 
 const SEO = ({
-  title = "HomeReady Finance Solutions | Get Bond-Ready in 30-90 Days",
-  description = "HomeReady Finance Solutions helps South Africans prepare for bond approval through credit preparation, financial positioning, and strategic credit recovery. 87% success rate with 500+ clients.",
-  keywords = "credit preparation, bond readiness, home loan South Africa, credit recovery, declined bond application, credit dispute, financial positioning, HomeReady Finance",
-  url = "https://www.homereadyfinance.co.za",
+  title = "HomeReady Finance Solutions | Credit Preparation & Bond Readiness South Africa",
+  description = "HomeReady Finance Solutions — South Africa's trusted credit preparation and bond readiness experts. We help you qualify for home loans with an 87% success rate. Get bond-ready in 30-90 days.",
+  keywords = "HomeReady, Home Ready, HomeReady Finance, HomeReady Finance Solutions, credit preparation South Africa, bond readiness, home loan preparation, declined bond recovery, credit repair SA, credit dispute South Africa, bond application help, first-time home buyer South Africa, home ready finance, homeready finance solutions",
+  url = "https://www.homereadyfinance.co.za/",
   image = "https://www.homereadyfinance.co.za/logo.png",
-  structuredData = null,
 }) => {
-  const defaultStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "FinancialService",
-    name: "HomeReady Finance Solutions",
-    url: "https://www.homereadyfinance.co.za",
-    logo: "https://www.homereadyfinance.co.za/logo.png",
-    image: "https://www.homereadyfinance.co.za/logo.png",
-    description:
-      "Credit preparation, financial positioning, and bond readiness services in South Africa. We prepare you to qualify for credit — properly and strategically.",
-    telephone: "+27871507207",
-    email: "Admin@homereadyfinance.co.za",
-    foundingDate: "2015",
-    areaServed: {
-      "@type": "Country",
-      name: "South Africa",
-    },
-    address: {
-      "@type": "PostalAddress",
-      addressCountry: "ZA",
-    },
-    sameAs: [
-      "https://www.facebook.com/HomeReadyFinanceSolutions",
-      "https://www.instagram.com/homereadyfinance",
-    ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.8",
-      reviewCount: "500",
-      bestRating: "5",
-    },
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Credit Services",
-      itemListElement: [
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Declined Application Recovery",
-            description:
-              "Analysis of bond declined reasons, credit & affordability correction plan, and re-application readiness strategy.",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Credit Report Assessment",
-            description:
-              "Comprehensive bureau analysis, identification of negative listings, and credit score breakdown.",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Credit Dispute Administration",
-            description:
-              "Drafting & submission of disputes, incorrect listing challenges, and status update tracking.",
-          },
-        },
-      ],
-    },
-  };
-
-  const jsonLd = structuredData || defaultStructuredData;
-
   return (
     <Helmet>
-      {/* Basic SEO */}
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <link rel="canonical" href={url} />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
       <meta name="author" content="HomeReady Finance Solutions" />
+      <meta name="geo.region" content="ZA" />
+      <meta name="geo.placename" content="South Africa" />
 
-      {/* Favicon Setup */}
+      {/* Favicon */}
       <link rel="icon" href="/favicon.ico" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -94,7 +27,7 @@ const SEO = ({
       <link rel="manifest" href="/site.webmanifest" />
       <meta name="theme-color" content="#C50B0C" />
 
-      {/* Open Graph (Facebook / LinkedIn / WhatsApp) */}
+      {/* Open Graph */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
@@ -110,9 +43,6 @@ const SEO = ({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
-
-      {/* Structured Data (Google rich results) */}
-      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
     </Helmet>
   );
 };
